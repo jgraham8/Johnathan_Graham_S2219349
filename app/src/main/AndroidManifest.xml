@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Name                 Johnathan Graham
+Student ID           S2219349
+Programme of Study   Computing
+-->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="org.me.gcu.johnathan_graham_s2219349">

@@ -1,3 +1,9 @@
+//
+// Name                 Johnathan Graham
+// Student ID           S2219349
+// Programme of Study   Computing
+//
+
 package org.me.gcu.johnathan_graham_s2219349;
 
 import androidx.appcompat.app.AppCompatActivity;
