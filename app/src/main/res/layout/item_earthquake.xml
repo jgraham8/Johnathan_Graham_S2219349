@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Name                 Johnathan Graham
+Student ID           S2219349
+Programme of Study   Computing
+-->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/earthquake_title"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_weight="1"
+    android:textColor="@color/black"
+    android:textSize="18sp" />
+

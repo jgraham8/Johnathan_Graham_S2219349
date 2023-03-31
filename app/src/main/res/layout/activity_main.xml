@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Name                 Johnathan Graham
+Student ID           S2219349
+Programme of Study   Computing
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinDate"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtinSearch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtinSearch"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:hint="Search"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@+id/spinDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listEarthquakes"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtinSearch" />
+
+    <LinearLayout
+        android:id="@+id/mapParent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/creator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listEarthquakes">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/creator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="App Created By Johnathan Graham S2219349"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        app:layout_constraintBottom_toTopOf="@+id/acknowledgement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/acknowledgement"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Contains British Geological Survey materials ©NERC 2019"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
